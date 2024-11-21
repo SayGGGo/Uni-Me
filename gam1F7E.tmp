@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://c72m2oaalrgo1"]
+
+[ext_resource type="Script" path="res://button_3.gd" id="1_bufuu"]
+
+[sub_resource type="Theme" id="Theme_iugw0"]
+
+[node name="Game" type="Node2D"]
+
+[node name="11" type="Button" parent="."]
+offset_left = 181.0
+offset_top = 408.0
+offset_right = 309.0
+offset_bottom = 530.0
+theme = SubResource("Theme_iugw0")
+theme_override_font_sizes/font_size = 50
+text = "11"
+
+[node name="Button" type="Button" parent="11"]
+layout_mode = 0
+offset_left = -109.0
+offset_top = -234.0
+offset_right = 476.0
+offset_bottom = -97.0
+theme_type_variation = &"FlatButton"
+theme_override_font_sizes/font_size = 70
+text = "9+2 ="
+
+[node name="button_3" type="Button" parent="."]
+offset_left = 374.0
+offset_top = 413.0
+offset_right = 509.0
+offset_bottom = 531.0
+theme_override_font_sizes/font_size = 50
+text = "20"
+script = ExtResource("1_bufuu")
+
+[node name="no2" type="Button" parent="."]
+offset_left = 559.0
+offset_top = 407.0
+offset_right = 694.0
+offset_bottom = 525.0
+theme_override_font_sizes/font_size = 50
+text = "13"
+
+[node name="no3" type="Button" parent="."]
+offset_left = 752.0
+offset_top = 411.0
+offset_right = 887.0
+offset_bottom = 529.0
+theme_override_font_sizes/font_size = 50
+text = "15"
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+title = "Не правильно нафиг!"
+ok_button_text = "Попробую ещё"
+dialog_text = "Ты безмозглая тупарылая тварь!"

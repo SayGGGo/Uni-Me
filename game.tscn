@@ -1,0 +1,67 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvy6p4vd7w83u"]
+
+[ext_resource type="Script" path="res://button_3.gd" id="1_bufuu"]
+[ext_resource type="Script" path="res://11.gd" id="1_jpa5a"]
+
+[sub_resource type="Theme" id="Theme_iugw0"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 163.0
+offset_top = 127.0
+offset_right = 660.0
+offset_bottom = 231.0
+theme_type_variation = &"FlatButton"
+theme_override_font_sizes/font_size = 30
+text = "Реши пример"
+
+[node name="11" type="Button" parent="."]
+offset_left = 181.0
+offset_top = 408.0
+offset_right = 309.0
+offset_bottom = 530.0
+theme = SubResource("Theme_iugw0")
+theme_override_font_sizes/font_size = 50
+text = "11"
+script = ExtResource("1_jpa5a")
+
+[node name="Button" type="Button" parent="11"]
+layout_mode = 0
+offset_left = -84.0
+offset_top = -243.0
+offset_right = 501.0
+offset_bottom = -106.0
+theme_type_variation = &"FlatButton"
+theme_override_font_sizes/font_size = 70
+text = "9+2 ="
+
+[node name="no" type="Button" parent="."]
+offset_left = 374.0
+offset_top = 413.0
+offset_right = 509.0
+offset_bottom = 531.0
+theme_override_font_sizes/font_size = 50
+text = "20"
+script = ExtResource("1_bufuu")
+
+[node name="no2" type="Button" parent="."]
+offset_left = 559.0
+offset_top = 407.0
+offset_right = 694.0
+offset_bottom = 525.0
+theme_override_font_sizes/font_size = 50
+text = "13"
+
+[node name="no3" type="Button" parent="."]
+offset_left = 752.0
+offset_top = 411.0
+offset_right = 887.0
+offset_bottom = 529.0
+theme_override_font_sizes/font_size = 50
+text = "15"
+
+[node name="dlg" type="AcceptDialog" parent="."]
+title = "Ура!"
+ok_button_text = "Далее"
+dialog_text = "Правильно!"
